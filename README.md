@@ -191,7 +191,7 @@ FileNotFoundError: [Errno 2] No translation file found for domain: 'humanize'
 
 How to add new phrases to existing locale files:
 
-> You may need to gettext toolkit. Install it by running in your terminal `sudo apt install gettext`
+> You may need to get the `gettext` toolkit. Install it using command `sudo apt install gettext`
 
 ```console
 $ xgettext --from-code=UTF-8 -o humanize.pot -k'_' -k'N_' -k'P_:1c,2' -l python src/humanize/*.py  # extract new phrases
